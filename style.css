@@ -1,8 +1,45 @@
 body {
-  background-image: url("halie-west-background.jpg");
+  display: flex;
+  justify-content: center;
+
+}
+
+#image {
+  height: 959px;
+  width: 540px;
+
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
 }
 
 
 p {
   font-family: 'Cabin Sketch', cursive;
+}
+
+/* styling li */
+
+ul {
+  list-style-type: none;
+}
+
+/* setting up form-inputs */
+.form-inputs {
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  width: 399px;
+}
+
+.one {
+  display: flex;
+}
+.two {
+  display: flex;
+}
+.three {
+  display: flex;
 }

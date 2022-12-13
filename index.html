@@ -14,7 +14,11 @@
 </head>
 
 <body>
-  <form action="">
+  <div id="image">
+    <img src="halie-west-25xggax4bSA-unsplash (1).jpg" alt="">
+  </div>
+
+  <div id="information">
     <div id="top">
       <p>This is not a real online service! You know you need something
         like this in your life to help you realize your deepest dreams.
@@ -24,13 +28,57 @@
         You know you want to.
       </p>
     </div>
-    <div id="middle">
+    <form id="middle">
       <h1>Let's do this!</h1>
-    </div>
+      <div class="form-inputs">
+
+        <div class="one">
+          <div>
+            <label for="firstName">First name</label>
+            <br>
+            <input type="text" name="firstName" id="firstName" minlength="5" maxlength="20" placeholder="John" required>
+          </div>
+          <div>
+            <label for="lastName">Last name</label>
+            <br>
+            <input type="text" name="lastName" id="lastName" minlength="5" maxlength="20" placeholder="Doe" required>
+          </div>
+        </div>
+
+        <div class="two">
+          <div>
+            <label for="email">Email address</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="John.Doe@yahoo.com" required>
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <br>
+            <input type="number" name="phone" id="phone" maxlength="15" placeholder="(404)111-1111" required>
+          </div>
+        </div>
+
+        <div class="three">
+          <div>
+            <label for="pass">Password</label>
+            <br>
+            <input type="password" name="pass" id="pass" maxlength="15" placeholder="*******" required>
+          </div>
+          <div>
+            <label for="passConf">Password Confirm</label>
+            <br>
+            <input type="password" name="passConf" id="passConf" maxlength="15" placeholder="*******" required>
+          </div>
+        </div>
+      </div>
+
+    </form>
     <div id="bottom">
       <button>Create Account</button>
     </div>
-  </form>
+  </div>
 </body>
 
 </html>
+
+
