@@ -36,10 +36,24 @@ ul {
 
 .one {
   display: flex;
+  justify-content: space-around;
 }
+
 .two {
   display: flex;
+  justify-content: space-around;
 }
+
 .three {
   display: flex;
+  justify-content: space-around;
+}
+
+label {
+  font-weight: 550;
+  font-size: small;
+}
+
+input {
+  gap: 10px 20px;
 }
