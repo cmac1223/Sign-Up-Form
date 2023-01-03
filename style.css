@@ -1,7 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
+  background-color: rgb(19, 18, 38);
+  width: 80%;
+  height: 80%;
+}
 
+#information {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+#top {
+  position: relative;
+  background-color: rgb(248, 246, 243);
+  height: calc(100% / 3);
+}
+
+#middle {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  height: calc(100% / 3);
+}
+
+#bottom {
+  position: relative;
+  background-color: rgb(248, 246, 243);
+  height: calc(100% / 3);
 }
 
 #image {
@@ -28,12 +58,16 @@ ul {
 
 /* setting up form-inputs */
 .form-inputs {
-  /* display: flex; */
   display: flex;
   flex-direction: column;
+  /* flex-direction: row; */
   width: 399px;
 }
 
+#title {
+  position: relative;
+  left: 25px;
+}
 .one {
   display: flex;
   justify-content: space-around;
@@ -54,6 +88,6 @@ label {
   font-size: small;
 }
 
-input {
+/* input {
   gap: 10px 20px;
-}
+} */
