@@ -5,9 +5,10 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: rgb(19, 18, 38);
-  width: 80%;
-  height: 80%;
+  background-color: rgb(5, 5, 10);
+  width: 70%;
+  height: 70%;
+  margin: auto;
 }
 
 #information {
@@ -22,10 +23,35 @@ body {
   height: calc(100% / 3);
 }
 
+.p1-p2 {
+  position: relative;
+  font-size: large;
+  top: 70px;
+  left: 40px;
+}
+
+#paragraph-one {
+  max-width: 80%;
+}
+
 #middle {
   position: relative;
   background-color: rgb(255, 255, 255);
   height: calc(100% / 3);
+}
+
+.form-inputs {
+  font-size: large;
+  font-weight: 100;
+  gap: 10px;
+}
+
+label {
+  font-size: xx-small;
+}
+
+input {
+
 }
 
 #bottom {
@@ -35,8 +61,10 @@ body {
 }
 
 #image {
-  height: 959px;
+  /* height: 959px; */
+  height: 750px;
   width: 540px;
+  /* width: 540px; */
 
 }
 
@@ -68,6 +96,7 @@ ul {
   position: relative;
   left: 25px;
 }
+
 .one {
   display: flex;
   justify-content: space-around;
