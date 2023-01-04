@@ -46,13 +46,11 @@ body {
   gap: 10px;
 }
 
-label {
+.form-labels label {
   font-size: xx-small;
 }
 
-input {
-
-}
+input {}
 
 #bottom {
   position: relative;
