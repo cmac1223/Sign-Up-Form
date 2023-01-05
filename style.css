@@ -50,7 +50,9 @@ body {
   font-size: xx-small;
 }
 
-input {}
+.form-labels input {
+  width: 12rem;
+}
 
 #bottom {
   position: relative;
@@ -87,18 +89,20 @@ ul {
   display: flex;
   flex-direction: column;
   /* flex-direction: row; */
-  width: 399px;
+  /* width: 399px; */
 }
 
 #title {
   position: relative;
-  left: 25px;
+  left: 35px;
 }
 
+/* Using flex as a basic layout for form labels/inputs */
 .one {
   display: flex;
   justify-content: space-around;
 }
+
 
 .two {
   display: flex;
@@ -108,6 +112,17 @@ ul {
 .three {
   display: flex;
   justify-content: space-around;
+}
+
+/* alignment for form columns */
+.first-column{
+  position: relative;
+  right: 25px;
+}
+
+.second-column {
+  position: relative;
+  right: 90px;
 }
 
 label {
