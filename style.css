@@ -115,14 +115,16 @@ ul {
 }
 
 /* alignment for form columns */
-.first-column{
+.first-column {
   position: relative;
-  right: 25px;
+  /* right: 25px; */
+  right: 4.3%;
 }
 
 .second-column {
   position: relative;
-  right: 90px;
+  /* right: 90px; */
+  right: 15%;
 }
 
 label {
@@ -130,6 +132,8 @@ label {
   font-size: small;
 }
 
-/* input {
-  gap: 10px 20px;
-} */
+.bottom-info{
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
