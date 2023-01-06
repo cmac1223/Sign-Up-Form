@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,21 +10,22 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(5, 5, 10);
-  width: 70%;
-  height: 70%;
+  max-width: 70%;
+  min-height: 100%;
   margin: auto;
 }
 
 #information {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   gap: 0;
 }
 
 #top {
   position: relative;
   background-color: rgb(248, 246, 243);
-  height: calc(100% / 3);
+  min-height: calc(100% / 3);
 }
 
 .p1-p2 {
@@ -37,7 +42,7 @@ body {
 #middle {
   position: relative;
   background-color: rgb(255, 255, 255);
-  height: calc(100% / 3);
+  min-height: calc(100% / 3);
 }
 
 .form-inputs {
@@ -51,19 +56,19 @@ body {
 }
 
 .form-labels input {
-  width: 12rem;
+  max-width: 11rem;
 }
 
 #bottom {
   position: relative;
   background-color: rgb(248, 246, 243);
-  height: calc(100% / 3);
+  min-height: calc(100% / 3);
 }
 
 #image {
   /* height: 959px; */
-  height: 750px;
-  width: 540px;
+  min-height: 100%;
+  max-width: 540px;
   /* width: 540px; */
 
 }
@@ -88,8 +93,6 @@ ul {
 .form-inputs {
   display: flex;
   flex-direction: column;
-  /* flex-direction: row; */
-  /* width: 399px; */
 }
 
 #title {
@@ -132,8 +135,17 @@ label {
   font-size: small;
 }
 
-.bottom-info{
+.bottom-info {
   position: relative;
   top: 10%;
   left: 5%;
+}
+
+/* Media Queries */
+
+@media(max-width: 1209px) {
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+  }
 }
