@@ -18,7 +18,7 @@ body {
 #information {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 115%;
   gap: 0;
 }
 
@@ -32,7 +32,7 @@ body {
   position: relative;
   font-size: large;
   top: 70px;
-  left: 40px;
+  left: 2em;
 }
 
 #paragraph-one {
@@ -45,18 +45,20 @@ body {
   min-height: calc(100% / 3);
 }
 
-.form-inputs {
-  font-size: large;
-  font-weight: 100;
-  gap: 10px;
-}
+/* sole purpose of this div is to get the form section to align with the rest of page */
+/* .dummy-one {
+  position: relative;
+  left: 2em;
+  outline: solid;
+} */
+
 
 .form-labels label {
   font-size: xx-small;
 }
 
 .form-labels input {
-  max-width: 11rem;
+  max-width: 25rem;
 }
 
 #bottom {
@@ -67,7 +69,7 @@ body {
 
 #image {
   /* height: 959px; */
-  min-height: 100%;
+  min-height: 115%;
   max-width: 540px;
   /* width: 540px; */
 
@@ -91,43 +93,88 @@ ul {
 
 /* setting up form-inputs */
 .form-inputs {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-evenly; */
+  font-size: large;
+  font-weight: 100;
+  position: relative;
 }
 
 #title {
   position: relative;
-  left: 35px;
+  left: 2em;
 }
 
 /* Using flex as a basic layout for form labels/inputs */
 .one {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
+
 }
 
 
 .two {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 
 .three {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 
 /* alignment for form columns */
 .first-column {
-  position: relative;
+  /* position: absolute; */
   /* right: 25px; */
-  right: 4.3%;
+  /* right: 4.3%; */
+  /* margin: 0 19em 0 0; */
 }
 
 .second-column {
-  position: relative;
+  /* position: relative; */
   /* right: 90px; */
-  right: 15%;
+  /* right: 15%; */
+  /* margin: 0 5em 0 0; */
+  /* margin: 0 0 0 19em; */
+}
+
+/* using relative/absolute to position form layout */
+.first-name {
+  position: absolute;
+  top: 1.5em;
+  left: 2em;
+}
+
+.last-name {
+  position: absolute;
+  top: 1.5em;
+  left: 13em;
+}
+
+.email {
+  position: absolute;
+  top: 4em;
+  left: 2em;
+}
+
+.phone-number {
+  position: absolute;
+  top: 4em;
+  left: 13em;
+}
+
+.password{
+  position: absolute;
+  top: 6.5em;
+  left: 2em;
+}
+
+.password-confirm {
+  position: absolute;
+  top: 6.5em;
+  left: 13em;
 }
 
 label {
@@ -143,9 +190,9 @@ label {
 
 /* Media Queries */
 
-@media(max-width: 1209px) {
+/* @media(max-width: 1209px) {
   .form-inputs {
     display: flex;
     flex-direction: column;
   }
-}
+} */

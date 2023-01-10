@@ -32,51 +32,53 @@
     </div>
 
     <form id="middle">
-      <div class="form-inputs">
-        <p id="title">Let's do this!</p>
-        <div class="one">
-          <div class="form-labels first-column">
-            <label for="firstName">FIRST NAME</label>
-            <br>
-            <input type="text" name="firstName" id="firstName"  minlength="5" maxlength="20" placeholder="John" required>
+      <!-- <div class="dummy-one"> -->
+        <div class="form-inputs">
+          <p id="title">Let's do this!</p>
+          <div class="one">
+            <div class="form-labels first-column first-name">
+              <label for="firstName">FIRST NAME</label>
+              <br>
+              <input type="text" name="firstName" id="firstName"  minlength="5" maxlength="20" placeholder="John" required>
+            </div>
+            <div class="form-labels second-column last-name" >
+              <label for="lastName">LAST NAME</label>
+              <br>
+              <input type="text" name="lastName" id="lastName"  minlength="5" maxlength="20" placeholder="Doe"
+                required>
+            </div>
           </div>
-          <div class="form-labels second-column" >
-            <label for="lastName">LAST NAME</label>
-            <br>
-            <input type="text" name="lastName" id="lastName"  minlength="5" maxlength="20" placeholder="Doe"
-              required>
+
+          <div class="two">
+            <div class="form-labels first-column email">
+              <label for="email">EMAIL </label>
+              <br>
+              <input type="email" name="email" id="email"  placeholder="John.Doe@yahoo.com" required>
+            </div>
+            <div class="form-labels second-column phone-number">
+              <label for="phone">PHONE NUMBER</label>
+              <br>
+              <input type="number" name="phone" id="phone"  maxlength="15" placeholder="(404)111-1111" required>
+            </div>
+          </div>
+
+          <div class="three">
+            <div class="form-labels first-column password">
+              <label for="pass">PASSWORD</label>
+              <br>
+              <input type="password" name="pass" id="pass"  maxlength="15" placeholder="*******" required>
+            </div>
+            <div class="form-labels second-column password-confirm">
+              <label for="passConf">PASSWORD CONFIRM</label>
+              <br>
+              <input type="password" name="passConf" id="passConf"  maxlength="15" placeholder="*******"
+                required>
+            </div>
           </div>
         </div>
-
-        <div class="two">
-          <div class="form-labels first-column">
-            <label for="email">EMAIL </label>
-            <br>
-            <input type="email" name="email" id="email"  placeholder="John.Doe@yahoo.com" required>
-          </div>
-          <div class="form-labels second-column">
-            <label for="phone">PHONE NUMBER</label>
-            <br>
-            <input type="number" name="phone" id="phone"  maxlength="15" placeholder="(404)111-1111" required>
-          </div>
-        </div>
-
-        <div class="three">
-          <div class="form-labels first-column">
-            <label for="pass">PASSWORD</label>
-            <br>
-            <input type="password" name="pass" id="pass"  maxlength="15" placeholder="*******" required>
-          </div>
-          <div class="form-labels second-column">
-            <label for="passConf">PASSWORD CONFIRM</label>
-            <br>
-            <input type="password" name="passConf" id="passConf"  maxlength="15" placeholder="*******"
-              required>
-          </div>
-        </div>
-      </div>
-
+      <!-- </div> -->
     </form>
+
     <div id="bottom">
       <div class="bottom-info">
         <button>Create Account</button>
@@ -89,4 +91,6 @@
 </body>
 
 </html>
+
+
 
