@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(5, 5, 10);
-  max-width: 70%;
+  min-width: 100%;
+  /* max-width: 75%; */
   min-height: 100%;
   margin: auto;
 }
@@ -18,8 +19,13 @@ body {
 #information {
   display: flex;
   flex-direction: column;
+  position: relative;
   min-height: 115%;
+  /* testing the width of #information */
+  /* max-width: 75%; */
+  width: 55%;
   gap: 0;
+  right: 3.264rem;
 }
 
 #top {
@@ -45,21 +51,21 @@ body {
   min-height: calc(100% / 3);
 }
 
-/* sole purpose of this div is to get the form section to align with the rest of page */
-/* .dummy-one {
-  position: relative;
-  left: 2em;
-  outline: solid;
-} */
-
 
 .form-labels label {
   font-size: xx-small;
 }
 
 .form-labels input {
-  max-width: 25rem;
+  max-width: auto;
 }
+
+/* input[type="text"]{
+  max-width:250px;
+} */
+/* input[type="number"]{
+  width:250px;
+} */
 
 #bottom {
   position: relative;
@@ -70,8 +76,13 @@ body {
 #image {
   /* height: 959px; */
   min-height: 115%;
-  max-width: 540px;
+  /* max-width: 50%; */
+  /* width: 50%; */
+  /* max-width: 540px; */
+
   /* width: 540px; */
+  width: 30rem;
+  max-width: 33rem;
 
 }
 
@@ -93,87 +104,51 @@ ul {
 
 /* setting up form-inputs */
 .form-inputs {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-evenly; */
+  position: relative;
   font-size: large;
   font-weight: 100;
-  position: relative;
 }
 
 #title {
-  position: relative;
+  position: absolute;
+  top: 0em;
   left: 2em;
 }
 
-/* Using flex as a basic layout for form labels/inputs */
-.one {
-  /* display: flex; */
-  /* justify-content: space-around; */
 
-}
-
-
-.two {
-  /* display: flex; */
-  /* justify-content: space-around; */
-}
-
-.three {
-  /* display: flex; */
-  /* justify-content: space-around; */
-}
-
-/* alignment for form columns */
-.first-column {
-  /* position: absolute; */
-  /* right: 25px; */
-  /* right: 4.3%; */
-  /* margin: 0 19em 0 0; */
-}
-
-.second-column {
-  /* position: relative; */
-  /* right: 90px; */
-  /* right: 15%; */
-  /* margin: 0 5em 0 0; */
-  /* margin: 0 0 0 19em; */
-}
-
-/* using relative/absolute to position form layout */
 .first-name {
   position: absolute;
-  top: 1.5em;
+  top: 2.5rem;
   left: 2em;
 }
 
 .last-name {
   position: absolute;
-  top: 1.5em;
+  top: 2.5rem;
   left: 13em;
 }
 
 .email {
   position: absolute;
-  top: 4em;
+  top: 5.5em;
   left: 2em;
 }
 
 .phone-number {
   position: absolute;
-  top: 4em;
+  top: 5.5em;
   left: 13em;
 }
 
-.password{
+.password {
   position: absolute;
-  top: 6.5em;
+  top: 8.5em;
   left: 2em;
 }
 
 .password-confirm {
   position: absolute;
-  top: 6.5em;
+  top: 8.5em;
   left: 13em;
 }
 
@@ -190,9 +165,59 @@ label {
 
 /* Media Queries */
 
-/* @media(max-width: 1209px) {
-  .form-inputs {
+@media(max-width: 815px) {
+  #middle {
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: firebrick;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: rgb(5, 5, 10); */
+    width: 100%;
+    /* max-width: 100%; */
+    /* min-height: 100%; */
+    /* margin: auto; */
+    /* margin: 0; */
+    /* flex-grow: 1; */
+    /* left: 1rem; */
+  }
+
+  #information {
     display: flex;
     flex-direction: column;
+    min-height: 115%;
+    width: 50rem;
+    /* min-width: 100%; */
+    gap: 0;
+    /* padding: 0 1rem 0 0; */
+    left:1rem;
   }
-} */
+
+  /* #image {
+    width: 1rem;
+  } */
+
+  .last-name {
+    position: absolute;
+    top: 2.5rem;
+    left: 13em;
+    /* left: 51%; */
+  }
+
+  /* .email {
+    position: absolute;
+    top: 5.5em;
+    left: 2em;
+  } */
+
+  /* .phone-number { */
+    /* position: absolute; */
+    /* top: 5.5em; */
+    /* left: 13em; */
+    /* left: 12em; */
+  /* } */
+}
