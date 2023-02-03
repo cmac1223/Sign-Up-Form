@@ -192,51 +192,6 @@ label {
     gap: 0;
   }
 
-
-}
-
-/* XL */
-@media only screen and (max-width: 1280px) {
-
-  body {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    left: 3rem;
-  }
-
-  .p1-p2 {
-    position: relative;
-    font-size: large;
-    top: 25px;
-    left: 2em;
-  }
-
-  #paragraph-one {
-    font-size: 1.2em;
-    max-width: 60%;
-  }
-
-  #paragraph-two {
-    font-size: 1.2em;
-  }
-
-  #middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: dodgerblue;
-  }
-
-  #information {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 115%;
-    width: fit-content;
-    gap: 0;
-  }
-
   #title {
     position: absolute;
     top: 0em;
@@ -291,6 +246,102 @@ label {
   }
 }
 
+/* XL */
+@media only screen and (max-width: 1280px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 3rem;
+  }
+
+  .p1-p2 {
+    position: relative;
+    font-size: large;
+    top: 25px;
+    left: 2em;
+  }
+
+  #paragraph-one {
+    font-size: 1.2em;
+    max-width: 60%;
+  }
+
+  #paragraph-two {
+    font-size: 1.2em;
+  }
+
+  #middle {
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: dodgerblue;
+  }
+
+  #information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 115%;
+    width: fit-content;
+    gap: 0;
+  }
+
+  #title {
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
+
+
+  .first-name {
+    position: absolute;
+    top: 3em;
+    left: 2em;
+  }
+
+  .last-name {
+    position: absolute;
+    top: 3em;
+    left: 21.5em;
+  }
+
+  .email {
+    position: absolute;
+    top: 7em;
+    left: 2em;
+  }
+
+  .phone-number {
+    position: absolute;
+    top: 7em;
+    left: 21.5em;
+  }
+
+  .password {
+    position: absolute;
+    top: 11em;
+    left: 2em;
+  }
+
+  .password-confirm {
+    position: absolute;
+    top: 11em;
+    left: 21.5em;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 19.5em;
+    height: 2.7em;
+    border-radius: 5px;
+  }
+}
+
 /* LARGE */
 @media only screen and (max-width: 1024px) {
 
@@ -315,6 +366,59 @@ label {
     min-height: 115%;
     width: fit-content;
     gap: 0;
+  }
+
+  #title {
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
+
+
+  .first-name {
+    position: absolute;
+    top: 2.5rem;
+    left: 2em;
+  }
+
+  .last-name {
+    position: absolute;
+    top: 2.5rem;
+    left: 17.5em;
+  }
+
+  .email {
+    position: absolute;
+    top: 5.5em;
+    left: 2em;
+  }
+
+  .phone-number {
+    position: absolute;
+    top: 5.5em;
+    left: 17.5em;
+  }
+
+  .password {
+    position: absolute;
+    top: 8.5em;
+    left: 2em;
+  }
+
+  .password-confirm {
+    position: absolute;
+    top: 8.5em;
+    left: 17.5em;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 15.5em;
+    height: 2.5em;
+    border-radius: 5px;
   }
 }
 
