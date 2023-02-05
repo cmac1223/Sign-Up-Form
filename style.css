@@ -16,9 +16,9 @@ body {
   width: 100%;
   /* will implement for smaller screens */
   /* width: 122.9rem; */
-  /* max-width: 75%; */
+  max-width: 75%;
   min-height: 100%;
-  /* margin: auto; */
+  margin: auto;
 }
 
 #information {
@@ -44,13 +44,18 @@ body {
 
 .p1-p2 {
   position: relative;
-  font-size: large;
+  /* font-size: large; */
+  font-size: 18px;
   top: 70px;
   left: 2em;
 }
 
 #paragraph-one {
-  max-width: 80%;
+  max-width: 40%;
+}
+
+#paragraph-one #paragraph-two {
+  left: 2em;
 }
 
 #middle {
@@ -60,14 +65,14 @@ body {
   width: 100%;
 }
 
-
+/*
 .form-labels label {
   font-size: xx-small;
 }
 
 .form-labels input {
   max-width: auto;
-}
+} */
 
 #bottom {
   position: relative;
@@ -120,38 +125,38 @@ ul {
 
 .first-name {
   position: absolute;
-  top: 2.5rem;
+  top: 2.5em;
   left: 2em;
 }
 
 .last-name {
   position: absolute;
-  top: 2.5rem;
-  left: 13em;
+  top: 2.5em;
+  left: 31.5em;
 }
 
 .email {
   position: absolute;
-  top: 5.5em;
+  top: 7em;
   left: 2em;
 }
 
 .phone-number {
   position: absolute;
-  top: 5.5em;
-  left: 13em;
+  top: 7em;
+  left: 31.5em;
 }
 
 .password {
   position: absolute;
-  top: 8.5em;
+  top: 11.5em;
   left: 2em;
 }
 
 .password-confirm {
   position: absolute;
-  top: 8.5em;
-  left: 13em;
+  top: 11.5em;
+  left: 31.5em;
 }
 
 label {
@@ -165,8 +170,20 @@ label {
   left: 5%;
 }
 
-/* Media Queries */
+.form-labels label {
+  font-size: .7em;
+}
 
+.form-labels input {
+  width: 20em;
+  height: 2.5em;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* Media Queries */
+/* XXL */
 @media only screen and (max-width: 1536px) {
 
   body {
@@ -192,6 +209,15 @@ label {
     gap: 0;
   }
 
+  #paragraph-one {
+    font-size: 1.2em;
+    max-width: 75%;
+  }
+
+  #paragraph-two {
+    font-size: 1.2em;
+  }
+
   #title {
     position: absolute;
     top: 0em;
@@ -201,38 +227,38 @@ label {
 
   .first-name {
     position: absolute;
-    top: 2.5rem;
+    top: 3em;
     left: 2em;
   }
 
   .last-name {
     position: absolute;
-    top: 2.5rem;
-    left: 20em;
+    top: 3em;
+    left: 23em;
   }
 
   .email {
     position: absolute;
-    top: 5.5em;
+    top: 7em;
     left: 2em;
   }
 
   .phone-number {
     position: absolute;
-    top: 5.5em;
-    left: 20em;
+    top: 7em;
+    left: 23em;
   }
 
   .password {
     position: absolute;
-    top: 8.5em;
+    top: 11em;
     left: 2em;
   }
 
   .password-confirm {
     position: absolute;
-    top: 8.5em;
-    left: 20em;
+    top: 11em;
+    left: 23em;
   }
 
   .form-labels label {
@@ -240,7 +266,7 @@ label {
   }
 
   .form-labels input {
-    width: 17.5em;
+    width: 15.5em;
     height: 2.5em;
     border-radius: 5px;
   }
@@ -260,13 +286,13 @@ label {
   .p1-p2 {
     position: relative;
     font-size: large;
-    top: 25px;
+    top: 4em;
     left: 2em;
   }
 
   #paragraph-one {
     font-size: 1.2em;
-    max-width: 60%;
+    max-width: 75%;
   }
 
   #paragraph-two {
@@ -336,8 +362,8 @@ label {
   }
 
   .form-labels input {
-    width: 19.5em;
-    height: 2.7em;
+    width: 13em;
+    height: 2.5em;
     border-radius: 5px;
   }
 }
@@ -448,84 +474,142 @@ label {
     gap: 0;
   }
 
-  /* SMALL */
-  @media only screen and (max-width: 640px) {
+  .first-name {
+    position: absolute;
+    top: 2.5em;
+    left: 2em;
+  }
 
-    #middle {
-      /* display: flex; */
-      /* flex-direction: column; */
-      background-color: wheat;
-    }
+  .last-name {
+    position: absolute;
+    top: 2.5em;
+    left: 12em;
+  }
 
-    body {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      max-width: 1336px;
-      left: 5rem;
-    }
+  .email {
+    position: absolute;
+    top: 5.5em;
+    left: 2em;
+  }
 
-    #information {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-height: 115%;
-      width: fit-content;
-      gap: 0;
-    }
+  .phone-number {
+    position: absolute;
+    top: 5.5em;
+    left: 12em;
+  }
 
-    .form-inputs {
-      position: relative;
-      font-size: large;
-      font-weight: 100;
-    }
+  .password {
+    position: absolute;
+    top: 8.5em;
+    left: 2em;
+  }
 
-    #title {
-      position: absolute;
-      top: 0em;
-      left: 2em;
-    }
+  .password-confirm {
+    position: absolute;
+    top: 8.5em;
+    left: 12em;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 9.5em;
+    height: 2.5em;
+    border-radius: 5px;
+  }
+}
+
+/* SMALL */
+@media only screen and (max-width: 640px) {
+
+  #middle {
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: wheat;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* max-width: 1336px; */
+    left: 5rem;
+  }
+
+  #information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 115%;
+    width: fit-content;
+    gap: 0;
+  }
+
+  .form-inputs {
+    position: relative;
+    font-size: large;
+    font-weight: 100;
+  }
+
+  #title {
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
 
 
-    .first-name {
-      position: relative;
-      top: 2.5rem;
-      left: 2em;
-    }
+  .first-name {
+    position: absolute;
+    top: 2.5em;
+    /* top: 2em; */
+    left: 2em;
+  }
 
-    .last-name {
-      position: relative;
-      top: 2.5rem;
-      left: 13em;
-    }
+  .last-name {
+    position: absolute;
+    top: 2.5em;
+    left: 10em;
+  }
 
-    .email {
-      position: absolute;
-      top: 5.5em;
-      left: 2em;
-    }
+  .email {
+    position: absolute;
+    top: 7em;
+    left: 2em;
+  }
 
-    .phone-number {
-      position: absolute;
-      top: 5.5em;
-      left: 13em;
-    }
+  .phone-number {
+    position: absolute;
+    top: 7em;
+    left: 10em;
+  }
 
-    .password {
-      position: absolute;
-      top: 8.5em;
-      left: 2em;
-    }
+  .password {
+    position: absolute;
+    top: 11.5em;
+    left: 2em;
+  }
 
-    .password-confirm {
-      position: absolute;
-      top: 8.5em;
-      left: 13em;
-    }
+  .password-confirm {
+    position: absolute;
+    /* top: 10.3em; */
+    top: 11.5em;
+    left: 10em;
+  }
 
-    label {
-      font-weight: 550;
-      font-size: small;
-    }
+  label {
+    font-weight: 550;
+    font-size: small;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 7.5em;
+    height: 2.5em;
+    border-radius: 5px;
   }
 }
