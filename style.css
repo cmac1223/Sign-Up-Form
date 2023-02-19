@@ -59,10 +59,13 @@ body {
 }
 
 #middle {
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  min-height: calc(100% / 3);
-  width: 100%;
+  /* position: relative; */
+  /* background-color: rgb(255, 255, 255); */
+  /* min-height: calc(100% / 3); */
+  /* width: 100%; */
+  /* box-shadow: 0px 5px 8px 2px gray; */
+  /* filter: drop-shadow(.75em .75em .5em); */
+  /* box-shadow: inset 5em 1em gold; */
 }
 
 #bottom {
@@ -82,7 +85,6 @@ body {
   /* width: 540px; */
   /* width: 30rem; */
   max-width: 33rem;
-
 }
 
 #image img {
@@ -90,15 +92,48 @@ body {
   height: 100%;
 }
 
+.banner {
+  position: absolute;
+  /* border: solid snow; */
+  top: 13.5em;
+  width: 100%;
+  height: 8em;
+  background: rgba(24, 24, 24, 0.5);
+
+}
+
+.title-text {
+  position: relative;
+  color: whitesmoke;
+  left: 3.3em;
+  top: -2.3em;
+  opacity: 1;
+  font-size: 60px;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  left: 5.5em;
+}
 
 p {
   font-family: 'Cabin Sketch', cursive;
 }
 
-/* styling li */
-
 ul {
   list-style-type: none;
+}
+
+.middle-container {
+  box-shadow: 0px 5px 20px gray;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  min-height: calc(100% / 3);
+  width: 100%;
+  z-index: 1;
+  /* padding: 2em; */
 }
 
 /* setting up form-inputs */
@@ -175,8 +210,8 @@ label {
 }
 
 /* Media Queries */
-/* XXL */
-@media only screen and (max-width: 1536px) {
+/* XXL+ */
+@media only screen and (max-width: 1939px) {
 
   body {
     display: flex;
@@ -186,10 +221,89 @@ label {
     left: 5rem;
   }
 
-  #middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: firebrick;
+  #information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 115%;
+    width: fit-content;
+    gap: 0;
+  }
+
+  #paragraph-one {
+    font-size: 1.2em;
+    max-width: 75%;
+  }
+
+  #paragraph-two {
+    font-size: 1.2em;
+  }
+
+  #title {
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
+
+
+  .first-name {
+    position: absolute;
+    top: 3em;
+    left: 2em;
+  }
+
+  .last-name {
+    position: absolute;
+    top: 3em;
+    left: 23.5em;
+  }
+
+  .email {
+    position: absolute;
+    top: 7em;
+    left: 2em;
+  }
+
+  .phone-number {
+    position: absolute;
+    top: 7em;
+    left: 23.5em;
+  }
+
+  .password {
+    position: absolute;
+    top: 11em;
+    left: 2em;
+  }
+
+  .password-confirm {
+    position: absolute;
+    top: 11em;
+    left: 23.5em;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 16.5em;
+    height: 2.2em;
+    border-radius: 5px;
+  }
+}
+
+
+/* Media Queries */
+/* XXL */
+@media only screen and (max-width: 1536px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1336px;
+    left: 5rem;
   }
 
   #information {
@@ -259,7 +373,7 @@ label {
 
   .form-labels input {
     width: 15.5em;
-    height: 2.5em;
+    height: 2.2em;
     border-radius: 5px;
   }
 }
@@ -289,12 +403,6 @@ label {
 
   #paragraph-two {
     font-size: 1.2em;
-  }
-
-  #middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: dodgerblue;
   }
 
   #information {
@@ -354,20 +462,110 @@ label {
   }
 
   .form-labels input {
-    width: 13em;
-    height: 2.5em;
+    width: 14em;
+    height: 2.2em;
+    border-radius: 5px;
+  }
+}
+
+/* Breaking point 1108 px */
+@media only screen and (max-width: 1108px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 3rem;
+  }
+
+  .p1-p2 {
+    position: relative;
+    font-size: large;
+    top: 4em;
+    left: 2em;
+  }
+
+  #paragraph-one {
+    font-size: 1.2em;
+    max-width: 75%;
+  }
+
+  #paragraph-two {
+    font-size: 1.2em;
+  }
+
+  #middle {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+  }
+
+  #information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 115%;
+    width: fit-content;
+    gap: 0;
+  }
+
+  #title {
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
+
+
+  .first-name {
+    position: absolute;
+    top: 3em;
+    left: 2em;
+  }
+
+  .last-name {
+    position: absolute;
+    top: 3em;
+    left: 20em;
+  }
+
+  .email {
+    position: absolute;
+    top: 7em;
+    left: 2em;
+  }
+
+  .phone-number {
+    position: absolute;
+    top: 7em;
+    left: 20em;
+  }
+
+  .password {
+    position: absolute;
+    top: 11em;
+    left: 2em;
+  }
+
+  .password-confirm {
+    position: absolute;
+    top: 11em;
+    left: 20em;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 12em;
+    height: 2.1em;
     border-radius: 5px;
   }
 }
 
 /* LARGE */
 @media only screen and (max-width: 1024px) {
-
-  #middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: midnightblue;
-  }
 
   body {
     display: flex;
@@ -440,14 +638,82 @@ label {
   }
 }
 
+/* Breaking point 954px */
+@media only screen and (max-width: 954px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 3rem;
+  }
+
+  #information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 115%;
+    width: fit-content;
+    gap: 0;
+  }
+
+  #title {
+    position: absolute;
+    top: 0em;
+    left: 2em;
+  }
+
+
+  .first-name {
+    position: absolute;
+    top: 3em;
+    left: 2em;
+  }
+
+  .last-name {
+    position: absolute;
+    top: 3em;
+    left: 15em;
+  }
+
+  .email {
+    position: absolute;
+    top: 7em;
+    left: 2em;
+  }
+
+  .phone-number {
+    position: absolute;
+    top: 7em;
+    left: 15em;
+  }
+
+  .password {
+    position: absolute;
+    top: 11em;
+    left: 2em;
+  }
+
+  .password-confirm {
+    position: absolute;
+    top: 11em;
+    left: 15em;
+  }
+
+  .form-labels label {
+    font-size: .7em;
+  }
+
+  .form-labels input {
+    width: 10em;
+    height: 2em;
+    border-radius: 5px;
+  }
+}
+
 /* MEDIUM */
 @media only screen and (max-width: 768px) {
-
-  #middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: tomato;
-  }
 
   body {
     display: flex;
@@ -516,11 +782,6 @@ label {
 /* SMALL */
 @media only screen and (max-width: 640px) {
 
-  #middle {
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: wheat;
-  }
 
   body {
     display: flex;
