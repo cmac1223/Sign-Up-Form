@@ -40,6 +40,7 @@ body {
   background-color: rgb(248, 246, 243);
   min-height: calc(100% / 3);
   width: 100%;
+  z-index: 2;
 }
 
 .p1-p2 {
@@ -127,7 +128,7 @@ ul {
 }
 
 .middle-container {
-  box-shadow: 0px 5px 20px gray;
+  box-shadow: 0px 5px 20px rgb(174, 173, 173);
   position: relative;
   background-color: rgb(255, 255, 255);
   min-height: calc(100% / 3);
