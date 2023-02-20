@@ -1,0 +1,216 @@
+html {
+  height: 100%;
+  /* width: 100%; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(5, 5, 10);
+  /* min-width: 100%; */
+  width: fit-content;
+  width: 100%;
+  /* will implement for smaller screens */
+  /* width: 122.9rem; */
+  max-width: 75%;
+  min-height: 100%;
+  margin: auto;
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 3; */
+  position: relative;
+  min-height: 115%;
+  /* testing the width of #information */
+  /* max-width: 75%; */
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  /* gap: 0; */
+  right: 3.264rem;
+}
+
+#top {
+  position: relative;
+  background-color: rgb(248, 246, 243);
+  min-height: calc(100% / 3);
+  width: 100%;
+  z-index: 2;
+}
+
+.p1-p2 {
+  position: relative;
+  /* font-size: large; */
+  font-size: 18px;
+  top: 70px;
+  left: 5%;
+}
+
+#paragraph-one {
+  max-width: 40%;
+}
+
+#paragraph-one #paragraph-two {
+  left: 2em;
+}
+
+#middle {
+  /* position: relative; */
+  /* background-color: rgb(255, 255, 255); */
+  /* min-height: calc(100% / 3); */
+  /* width: 100%; */
+  /* box-shadow: 0px 5px 8px 2px gray; */
+  /* filter: drop-shadow(.75em .75em .5em); */
+  /* box-shadow: inset 5em 1em gold; */
+}
+
+#bottom {
+  position: relative;
+  background-color: rgb(248, 246, 243);
+  min-height: calc(100% / 3);
+  width: 100%;
+}
+
+#image {
+  position: relative;
+  /* height: 959px; */
+  min-height: 115%;
+  /* max-width: 50%; */
+  /* width: 50%; */
+  /* max-width: 540px; */
+  /* width: 540px; */
+  /* width: 30rem; */
+  max-width: 33rem;
+}
+
+#image img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  position: absolute;
+  /* border: solid snow; */
+  top: 13.5em;
+  width: 100%;
+  height: 8em;
+  background: rgba(24, 24, 24, 0.5);
+
+}
+
+.title-text {
+  position: relative;
+  color: whitesmoke;
+  left: 3.3em;
+  top: -2.3em;
+  opacity: 1;
+  font-size: 60px;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  left: 5.5em;
+}
+
+p {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.middle-container {
+  box-shadow: 0px 4px 7px rgb(211, 211, 211);
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  min-height: calc(100% / 3);
+  width: 100%;
+  z-index: 1;
+  /* padding: 2em; */
+}
+
+/* setting up form-inputs */
+.form-inputs {
+  /* position: relative; */
+  font-size: large;
+  font-weight: 100;
+  /* border: solid; */
+}
+
+#title {
+  position: absolute;
+  top: 0em;
+  left: 2em;
+}
+
+
+.first-name {
+  position: absolute;
+  /* top: 2.5em; */
+  /* left: 2em; */
+  top: 18%;
+  /* bottom: 0%; */
+  left: 6.2%;
+}
+
+.last-name {
+  position: absolute;
+  top: 2.5em;
+  left: 16em;
+}
+
+.email {
+  position: absolute;
+  top: 38%;
+  left: 6.2%;
+}
+
+.phone-number {
+  position: absolute;
+  top: 7em;
+  left: 16em;
+}
+
+.password {
+  position: absolute;
+  bottom: 8%;
+  left: 6.2%;
+}
+
+.password-confirm {
+  position: absolute;
+  top: 11.5em;
+  left: 16em;
+}
+
+label {
+  font-weight: 550;
+  font-size: small;
+}
+
+.bottom-info {
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+
+
+.form-labels label {
+  font-size: .7em;
+}
+
+.form-labels input {
+  width: 9em;
+  height: 1.9em;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bolder;
+}
