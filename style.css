@@ -11,11 +11,12 @@ body {
   display: flex;
   justify-content: center;
   flex: 1;
-  background-color: rgb(5, 5, 10);
-  gap: 0.5px;
-  margin: 0;
+  background-color: rgb(247, 177, 177);
+  /* background-color: rgb(5, 5, 10); */
+  padding: 0;
   max-width: 75%;
-  height: 100%;
+  /* height: 100%; */
+  height: 100vh;
   margin: auto;
 }
 
@@ -24,22 +25,38 @@ body {
 /* Left side of the screen Image section */
 #image {
   position: relative;
+  padding: 0;
   /* position: absolute; */
-  min-height: 100%;
-  max-width: 33rem;
+  height: 100%;
+  /* min-height: 100%; */
+  /* max-width: 33rem; */
+  max-width: 31vw;
+  top: -8.5em;
 }
 
-#image img {
+/* #image img {
   flex: 1;
   width: 100%;
-  height: 100%;
+  padding: 0;
+  height: 100.9%;
   object-fit: cover;
-  /* z-index: -1; */
+  z-index: -1;
+  top: 0;
+} */
+
+#logo-image {
+  width: 100%;
+  z-index: -1;
 }
 
+#full-image {
+  height: 100vh;
+}
+
+
 .banner {
-  position: absolute;
-  /* position: relative; */
+  /* position: absolute; */
+  position: relative;
   top: 13.5em;
   width: 100%;
   height: 8em;
@@ -73,16 +90,23 @@ body {
 /* Right side of the page where information, form, submit button is place */
 #information {
   display: flex;
+  position: relative;
   flex-direction: column;
-  min-height: 100%;
+  width: 69vw;
+  height: 99.1%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Right side - Top section mostly paragraph text */
 #top {
   position: relative;
   background-color: rgb(248, 246, 243);
-  min-height: calc(100% / 3);
-  width: 100%;
+  height: 33.33333333%;
+  /* height: calc(99% / 3); */
+  /* min-height: calc(100% / 3.2); */
+  margin: 0;
+  padding: 0;
   z-index: 2;
 }
 
@@ -106,15 +130,16 @@ p {
 }
 
 
-
-
 /* Right side - Middile section where form information is located */
 .middle-container {
   box-shadow: 0px 4px 7px rgb(211, 211, 211);
   position: relative;
   background-color: rgb(255, 255, 255);
-  min-height: calc(100% / 3);
-  width: 100%;
+  height: 33.33333333%;
+  /* height: calc(99% / 3); */
+  /* min-height: calc(100% / 3.2); */
+  margin: 0;
+  padding: 0;
   z-index: 1;
 }
 
@@ -188,8 +213,9 @@ label {
 #bottom {
   position: relative;
   background-color: rgb(248, 246, 243);
-  min-height: calc(100% / 3);
-  width: 100%;
+  height: 33.33333333%;
+  /* min-height: calc(100% / 3.2); */
+  margin: 0;
 }
 
 .bottom-info {
@@ -198,6 +224,188 @@ label {
   left: 5%;
 }
 
+
+/* Screen size width of 1580px */
+@media (max-width: 1580px) {
+
+  /* Left side of the screen Image section */
+  #image {
+    position: relative;
+    /* position: absolute; */
+    min-height: 100%;
+    max-width: 33rem;
+  }
+
+  #image img {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: -1; */
+  }
+
+  .banner {
+    /* position: absolute; */
+    position: relative;
+    top: 14.5em;
+    width: 100%;
+    height: 8.7em;
+    background: rgba(24, 24, 24, 0.5);
+  }
+
+  .title-text {
+    position: relative;
+    /* position: absolute; */
+    color: whitesmoke;
+    left: 3.7em;
+    /* right: 0%; */
+    top: -2.7em;
+    opacity: 1;
+    font-size: 53px;
+  }
+
+  .logo-container {
+    position: relative;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    top: 0%;
+    left: 25%;
+  }
+
+
+
+
+  /* Right side of the page where information, form, submit button is place */
+  #information {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  /* Right side - Top section mostly paragraph text */
+  #top {
+    position: relative;
+    background-color: rgb(248, 246, 243);
+    height: 33.33%;
+    min-height: calc(100% / 3);
+    width: 100%;
+    z-index: 2;
+  }
+
+  .p1-p2 {
+    position: relative;
+    font-size: 22px;
+    top: 35%;
+    left: 6.2%;
+  }
+
+  #paragraph-one {
+    max-width: 95%;
+  }
+
+  #paragraph-one #paragraph-two {
+    left: 2em;
+  }
+
+  p {
+    font-family: 'Cabin Sketch', cursive;
+  }
+
+
+
+
+  /* Right side - Middile section where form information is located */
+  .middle-container {
+    box-shadow: 0px 4px 7px rgb(211, 211, 211);
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    min-height: calc(100% / 3);
+    width: 100%;
+    z-index: 1;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  #title {
+    position: absolute;
+    left: 6.2%;
+  }
+
+  label {
+    font-weight: 550;
+    font-size: small;
+  }
+
+  /* Right side -  Start of inputs located inside the form */
+  .first-name {
+    position: absolute;
+    top: 13%;
+    left: 6.2%;
+  }
+
+  .last-name {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+  }
+
+  .email {
+    position: absolute;
+    top: 42%;
+    left: 6.2%;
+  }
+
+  .phone-number {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+  }
+
+  .password {
+    position: absolute;
+    bottom: 8%;
+    left: 6.2%;
+  }
+
+  .password-confirm {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+  }
+
+  .form-labels label {
+    font-size: .5em;
+  }
+
+  .form-labels input {
+    /* width: 45%; */
+    width: 13em;
+    height: 1.3em;
+    min-height: 1.5em;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+
+
+  /* Bottom section with create account button */
+  #bottom {
+    position: relative;
+    background-color: rgb(248, 246, 243);
+    min-height: calc(100% / 3);
+    width: 100%;
+  }
+
+  .bottom-info {
+    position: relative;
+    top: 10%;
+    left: 5%;
+  }
+}
 
 /* Extra small screen at width of 480px  */
 @media (max-width: 480px) {
