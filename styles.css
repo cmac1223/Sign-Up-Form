@@ -25,7 +25,8 @@ body {
   position: relative;
   padding: 0;
   height: 100%;
-  max-width: 27vw;
+  /* max-width: 27vw; */
+  /* width: 27vw; */
   top: -8.5em;
 }
 
@@ -37,6 +38,7 @@ body {
 
 #full-image {
   height: 100vh;
+  width: 27vw;
 }
 
 
@@ -203,12 +205,13 @@ label {
 }
 
 
-/* Screen size width of 1700px */
+/* Adjustments for width of 1700px */
 @media (max-width: 1700px) {
 
   /* Adjust the image width */
-  #image {
-    max-width: 27.5vw;
+  #full-image {
+    height: 100vh;
+    width: 27.5vw;
   }
 
 
@@ -243,12 +246,14 @@ label {
     height: 1.87em;
   }
 }
-/* Screen size width of 1500px */
+
+/* Adjustments for width of 1500px */
 @media (max-width: 1500px) {
 
   /* Adjust the image width */
-  #image {
-    max-width: 28.5vw;
+  #full-image {
+    height: 100vh;
+    width: 28.5vw;
   }
 
 
@@ -283,12 +288,14 @@ label {
     height: 1.87em;
   }
 }
-/* Screen size width of 1400px */
+
+/* Adjustments for width of 1400px */
 @media (max-width: 1400px) {
 
   /* Adjust the image width */
-  #image {
-    max-width: 28.5vw;
+  #full-image {
+    height: 100vh;
+    width: 28.5vw;
   }
 
 
@@ -324,4 +331,107 @@ label {
   }
 }
 
+/* Adjustments for width of 1200px */
+@media (max-width: 1200px) {
 
+  /* Adjust the image width */
+  #full-image {
+    height: 100vh;
+    width: 30vw;
+  }
+
+  .title-text {
+    position: relative;
+    color: whitesmoke;
+    left: 4.3em;
+    right: 0%;
+    /* top: -2.3em; */
+    top: -3.1em;
+    opacity: 1;
+    font-size: 40px;
+  }
+
+
+  /* Adjust the form width */
+  #information {
+    width: 70vw;
+  }
+
+  /* Width of the paragraph in section 1 */
+  #paragraph-one {
+    max-width: 74%;
+  }
+
+  /* Start of last name */
+  .last-name {
+    left: 51.5%;
+  }
+
+  /* Start of phone-number */
+  .phone-number {
+    left: 51.5%;
+  }
+
+  /* Start of password-confirm */
+  .password-confirm {
+    left: 51.5%;
+  }
+
+  /* width & height of form inputs */
+  .form-labels input {
+    width: 85%;
+    height: 1.87em;
+  }
+}
+/* Adjustments for width of 915px */
+@media (max-width: 915px) {
+
+  /* Adjust the image width */
+  #full-image {
+    height: 100vh;
+    width: 29vw;
+  }
+
+  .title-text {
+    position: relative;
+    color: whitesmoke;
+    left: 4.3em;
+    right: 0%;
+    /* top: -2.3em; */
+    top: -3.1em;
+    opacity: 1;
+    font-size: 40px;
+  }
+
+
+  /* Adjust the form width */
+  #information {
+    width: 71vw;
+  }
+
+  /* Width of the paragraph in section 1 */
+  #paragraph-one {
+    max-width: 74%;
+  }
+
+  /* Start of last name */
+  .last-name {
+    left: 51.5%;
+  }
+
+  /* Start of phone-number */
+  .phone-number {
+    left: 51.5%;
+  }
+
+  /* Start of password-confirm */
+  .password-confirm {
+    left: 51.5%;
+  }
+
+  /* width & height of form inputs */
+  .form-labels input {
+    width: 73%;
+    height: 1.87em;
+  }
+}
