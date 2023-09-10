@@ -12,10 +12,8 @@ body {
   justify-content: center;
   flex: 1;
   background-color: rgb(247, 177, 177);
-  /* background-color: rgb(5, 5, 10); */
   padding: 0;
   max-width: 75%;
-  /* height: 100%; */
   height: 100vh;
   margin: auto;
 }
@@ -26,23 +24,11 @@ body {
 #image {
   position: relative;
   padding: 0;
-  /* position: absolute; */
   height: 100%;
-  /* min-height: 100%; */
-  /* max-width: 33rem; */
-  max-width: 31vw;
+  max-width: 27vw;
   top: -8.5em;
 }
 
-/* #image img {
-  flex: 1;
-  width: 100%;
-  padding: 0;
-  height: 100.9%;
-  object-fit: cover;
-  z-index: -1;
-  top: 0;
-} */
 
 #logo-image {
   width: 100%;
@@ -55,9 +41,9 @@ body {
 
 
 .banner {
-  /* position: absolute; */
   position: relative;
-  top: 13.5em;
+  /* top: 13.5em; */
+  top: 21.5em;
   width: 100%;
   height: 8em;
   background: rgba(24, 24, 24, 0.5);
@@ -65,7 +51,6 @@ body {
 
 .title-text {
   position: relative;
-  /* position: absolute; */
   color: whitesmoke;
   left: 3.3em;
   right: 0%;
@@ -76,10 +61,8 @@ body {
 
 .logo-container {
   position: relative;
-  /* position: absolute; */
   width: 100px;
   height: auto;
-  /* left: 5.5em; */
   object-fit: contain;
   left: 13%;
 }
@@ -92,7 +75,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 69vw;
+  width: 63vw;
   height: 99.1%;
   margin: 0;
   padding: 0;
@@ -103,8 +86,6 @@ body {
   position: relative;
   background-color: rgb(248, 246, 243);
   height: 33.33333333%;
-  /* height: calc(99% / 3); */
-  /* min-height: calc(100% / 3.2); */
   margin: 0;
   padding: 0;
   z-index: 2;
@@ -136,8 +117,6 @@ p {
   position: relative;
   background-color: rgb(255, 255, 255);
   height: 33.33333333%;
-  /* height: calc(99% / 3); */
-  /* min-height: calc(100% / 3.2); */
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -167,7 +146,7 @@ label {
 .last-name {
   position: absolute;
   top: 13%;
-  left: 44%;
+  left: 42%;
 }
 
 .email {
@@ -179,7 +158,7 @@ label {
 .phone-number {
   position: absolute;
   top: 42%;
-  left: 44%;
+  left: 42%;
 }
 
 .password {
@@ -191,7 +170,7 @@ label {
 .password-confirm {
   position: absolute;
   bottom: 8%;
-  left: 44%;
+  left: 42%;
 }
 
 .form-labels label {
@@ -200,7 +179,7 @@ label {
 
 .form-labels input {
   width: 125%;
-  height: 1.7em;
+  height: 1.87em;
   min-height: 1.5em;
   border-radius: 5px;
   font-size: 18px;
@@ -214,7 +193,6 @@ label {
   position: relative;
   background-color: rgb(248, 246, 243);
   height: 33.33333333%;
-  /* min-height: calc(100% / 3.2); */
   margin: 0;
 }
 
@@ -225,369 +203,125 @@ label {
 }
 
 
-/* Screen size width of 1580px */
-@media (max-width: 1580px) {
+/* Screen size width of 1700px */
+@media (max-width: 1700px) {
 
-  /* Left side of the screen Image section */
+  /* Adjust the image width */
   #image {
-    position: relative;
-    /* position: absolute; */
-    min-height: 100%;
-    max-width: 33rem;
-  }
-
-  #image img {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* z-index: -1; */
-  }
-
-  .banner {
-    /* position: absolute; */
-    position: relative;
-    top: 14.5em;
-    width: 100%;
-    height: 8.7em;
-    background: rgba(24, 24, 24, 0.5);
-  }
-
-  .title-text {
-    position: relative;
-    /* position: absolute; */
-    color: whitesmoke;
-    left: 3.7em;
-    /* right: 0%; */
-    top: -2.7em;
-    opacity: 1;
-    font-size: 53px;
-  }
-
-  .logo-container {
-    position: relative;
-    width: 100px;
-    height: auto;
-    object-fit: contain;
-    top: 0%;
-    left: 25%;
+    max-width: 27.5vw;
   }
 
 
-
-
-  /* Right side of the page where information, form, submit button is place */
+  /* Adjust the form width */
   #information {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    width: 72.5vw;
   }
 
-  /* Right side - Top section mostly paragraph text */
-  #top {
-    position: relative;
-    background-color: rgb(248, 246, 243);
-    height: 33.33%;
-    min-height: calc(100% / 3);
-    width: 100%;
-    z-index: 2;
-  }
-
-  .p1-p2 {
-    position: relative;
-    font-size: 22px;
-    top: 35%;
-    left: 6.2%;
-  }
-
+  /* Width of the paragraph in section 1 */
   #paragraph-one {
-    max-width: 95%;
+    max-width: 65%;
   }
 
-  #paragraph-one #paragraph-two {
-    left: 2em;
-  }
-
-  p {
-    font-family: 'Cabin Sketch', cursive;
-  }
-
-
-
-
-  /* Right side - Middile section where form information is located */
-  .middle-container {
-    box-shadow: 0px 4px 7px rgb(211, 211, 211);
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    min-height: calc(100% / 3);
-    width: 100%;
-    z-index: 1;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  #title {
-    position: absolute;
-    left: 6.2%;
-  }
-
-  label {
-    font-weight: 550;
-    font-size: small;
-  }
-
-  /* Right side -  Start of inputs located inside the form */
-  .first-name {
-    position: absolute;
-    top: 13%;
-    left: 6.2%;
-  }
-
+  /* Start of last name */
   .last-name {
-    position: absolute;
-    top: 13%;
-    left: 50%;
+    left: 45.5%;
   }
 
-  .email {
-    position: absolute;
-    top: 42%;
-    left: 6.2%;
-  }
-
+  /* Start of phone-number */
   .phone-number {
-    position: absolute;
-    top: 42%;
-    left: 50%;
+    left: 45.5%;
   }
 
-  .password {
-    position: absolute;
-    bottom: 8%;
-    left: 6.2%;
-  }
-
+  /* Start of password-confirm */
   .password-confirm {
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
+    left: 45.5%;
   }
 
-  .form-labels label {
-    font-size: .5em;
-  }
-
+  /* width & height of form inputs */
   .form-labels input {
-    /* width: 45%; */
-    width: 13em;
-    height: 1.3em;
-    min-height: 1.5em;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bolder;
+    width: 123%;
+    height: 1.87em;
+  }
+}
+/* Screen size width of 1500px */
+@media (max-width: 1500px) {
+
+  /* Adjust the image width */
+  #image {
+    max-width: 28.5vw;
   }
 
 
-
-  /* Bottom section with create account button */
-  #bottom {
-    position: relative;
-    background-color: rgb(248, 246, 243);
-    min-height: calc(100% / 3);
-    width: 100%;
+  /* Adjust the form width */
+  #information {
+    width: 71.5vw;
   }
 
-  .bottom-info {
-    position: relative;
-    top: 10%;
-    left: 5%;
+  /* Width of the paragraph in section 1 */
+  #paragraph-one {
+    max-width: 69%;
+  }
+
+  /* Start of last name */
+  .last-name {
+    left: 45.5%;
+  }
+
+  /* Start of phone-number */
+  .phone-number {
+    left: 45.5%;
+  }
+
+  /* Start of password-confirm */
+  .password-confirm {
+    left: 45.5%;
+  }
+
+  /* width & height of form inputs */
+  .form-labels input {
+    width: 115%;
+    height: 1.87em;
+  }
+}
+/* Screen size width of 1400px */
+@media (max-width: 1400px) {
+
+  /* Adjust the image width */
+  #image {
+    max-width: 28.5vw;
+  }
+
+
+  /* Adjust the form width */
+  #information {
+    width: 71.5vw;
+  }
+
+  /* Width of the paragraph in section 1 */
+  #paragraph-one {
+    max-width: 69%;
+  }
+
+  /* Start of last name */
+  .last-name {
+    left: 47.5%;
+  }
+
+  /* Start of phone-number */
+  .phone-number {
+    left: 47.5%;
+  }
+
+  /* Start of password-confirm */
+  .password-confirm {
+    left: 47.5%;
+  }
+
+  /* width & height of form inputs */
+  .form-labels input {
+    width: 105%;
+    height: 1.87em;
   }
 }
 
-/* Extra small screen at width of 480px  */
-@media (max-width: 480px) {
 
-  /* Left side of the screen Image section */
-  #image {
-    position: relative;
-    /* position: absolute; */
-    min-height: 100%;
-    max-width: 33rem;
-  }
-
-  #image img {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* z-index: -1; */
-  }
-
-  .banner {
-    position: absolute;
-    /* position: relative; */
-    top: 14.5em;
-    width: 100%;
-    height: 8em;
-    background: rgba(24, 24, 24, 0.5);
-  }
-
-  .title-text {
-    position: relative;
-    /* position: absolute; */
-    color: whitesmoke;
-    left: 2.4em;
-    /* right: 0%; */
-    top: -2.1em;
-    opacity: 1;
-    font-size: 40px;
-  }
-
-  .logo-container {
-    position: relative;
-    /* position: absolute; */
-    /* width: 55px; */
-    width: 36.5%;
-    height: auto;
-    /* left: 5.5em; */
-    object-fit: contain;
-    top: 12%;
-    left: 13%;
-  }
-
-
-
-
-  /* Right side of the page where information, form, submit button is place */
-  #information {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
-
-  /* Right side - Top section mostly paragraph text */
-  #top {
-    position: relative;
-    background-color: rgb(248, 246, 243);
-    min-height: calc(100% / 3);
-    width: 100%;
-    z-index: 2;
-  }
-
-  .p1-p2 {
-    position: relative;
-    font-size: 12px;
-    top: 60%;
-    left: 6.2%;
-  }
-
-  #paragraph-one {
-    max-width: 95%;
-  }
-
-  #paragraph-one #paragraph-two {
-    left: 2em;
-  }
-
-  p {
-    font-family: 'Cabin Sketch', cursive;
-  }
-
-
-
-
-  /* Right side - Middile section where form information is located */
-  .middle-container {
-    box-shadow: 0px 4px 7px rgb(211, 211, 211);
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    min-height: calc(100% / 3);
-    width: 100%;
-    z-index: 1;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  #title {
-    position: absolute;
-    left: 6.2%;
-  }
-
-  label {
-    font-weight: 550;
-    font-size: small;
-  }
-
-  /* Right side -  Start of inputs located inside the form */
-  .first-name {
-    position: absolute;
-    top: 13%;
-    left: 6.2%;
-  }
-
-  .last-name {
-    position: absolute;
-    top: 13%;
-    left: 54%;
-  }
-
-  .email {
-    position: absolute;
-    top: 42%;
-    left: 6.2%;
-  }
-
-  .phone-number {
-    position: absolute;
-    top: 42%;
-    left: 54%;
-  }
-
-  .password {
-    position: absolute;
-    bottom: 8%;
-    left: 6.2%;
-  }
-
-  .password-confirm {
-    position: absolute;
-    bottom: 8%;
-    left: 54%;
-  }
-
-  .form-labels label {
-    font-size: .5em;
-  }
-
-  .form-labels input {
-    /* width: 45%; */
-    width: 4em;
-    height: 1.3em;
-    min-height: 1.5em;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bolder;
-  }
-
-
-
-  /* Bottom section with create account button */
-  #bottom {
-    position: relative;
-    background-color: rgb(248, 246, 243);
-    min-height: calc(100% / 3);
-    width: 100%;
-  }
-
-  .bottom-info {
-    position: relative;
-    top: 10%;
-    left: 5%;
-  }
-
-}
