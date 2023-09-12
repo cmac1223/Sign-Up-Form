@@ -214,6 +214,12 @@ label {
     width: 27.5vw;
   }
 
+  .title-text {
+    left: 3.7em;
+    top: -2.7em;
+    font-size: 49px;
+  }
+
 
   /* Adjust the form width */
   #information {
@@ -254,6 +260,12 @@ label {
   #full-image {
     height: 100vh;
     width: 28.5vw;
+  }
+
+  .title-text {
+    left: 3.7em;
+    top: -2.8em;
+    font-size: 47px;
   }
 
 
@@ -298,6 +310,11 @@ label {
     width: 28.5vw;
   }
 
+  .title-text {
+    left: 3.6em;
+    top: -2.8em;
+    font-size: 47px;
+  }
 
   /* Adjust the form width */
   #information {
@@ -341,14 +358,9 @@ label {
   }
 
   .title-text {
-    position: relative;
-    color: whitesmoke;
-    left: 4.3em;
-    right: 0%;
-    /* top: -2.3em; */
-    top: -3.1em;
-    opacity: 1;
-    font-size: 40px;
+    left: 3.5em;
+    top: -3em;
+    font-size: 43px;
   }
 
 
@@ -383,8 +395,9 @@ label {
     height: 1.87em;
   }
 }
+
 /* Adjustments for width of 915px */
-@media (max-width: 915px) {
+@media (max-width: 900px) {
 
   /* Adjust the image width */
   #full-image {
@@ -392,17 +405,23 @@ label {
     width: 29vw;
   }
 
-  .title-text {
-    position: relative;
-    color: whitesmoke;
-    left: 4.3em;
-    right: 0%;
-    /* top: -2.3em; */
-    top: -3.1em;
-    opacity: 1;
-    font-size: 40px;
+  .banner {
+    top: 22.5em;
+    height: 6.9em;
+
   }
 
+  .title-text {
+    left: 3.6em;
+    top: -2.8em;
+    font-size: 35px;
+  }
+
+  #logo-image {
+    width: 80%;
+    top: -2.9em;
+    z-index: -1;
+  }
 
   /* Adjust the form width */
   #information {
