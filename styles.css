@@ -106,6 +106,7 @@ body {
 
 #paragraph-one #paragraph-two {
   left: 2em;
+  /* max-width: 55%; */
 }
 
 p {
@@ -271,6 +272,7 @@ label {
 
   /* Adjust the form width */
   #information {
+    height: 99.25%;
     width: 71.5vw;
   }
 
@@ -372,6 +374,11 @@ label {
   /* Width of the paragraph in section 1 */
   #paragraph-one {
     max-width: 74%;
+    font-size: smaller;
+  }
+
+  #paragraph-one #paragraph-two {
+    left: 2em;
   }
 
   /* Start of last name */
@@ -425,12 +432,14 @@ label {
 
   /* Adjust the form width */
   #information {
+    height: 97.4%;
     width: 71vw;
   }
 
   /* Width of the paragraph in section 1 */
   #paragraph-one {
     max-width: 74%;
+    font-size: 16px;
   }
 
   /* Start of last name */
