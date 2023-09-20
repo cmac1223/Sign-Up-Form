@@ -125,6 +125,21 @@ p {
   z-index: 1;
 }
 
+/* form input */
+input {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* input:invalid {
+  border-color: rgb(215, 13, 13);
+} */
+input:valid {
+  border-color: rgb(0, 0, 0);
+}
+
 ul {
   list-style-type: none;
 }

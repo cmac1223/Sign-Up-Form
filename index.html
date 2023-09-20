@@ -21,7 +21,7 @@
       </div>
       <h1 class="title-text">Blah</h1>
     </div>
-      <img id="full-image" src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
+    <img id="full-image" src="halie-west-25xggax4bSA-unsplash.jpg" alt="">
   </div>
 
 
@@ -40,46 +40,51 @@
     </div>
 
     <div class="middle-container">
-      <form id="middle">
+      <p id="title">Let's do this!</p>
+      <form id="form-section">
         <div class="form-inputs">
-          <p id="title">Let's do this!</p>
           <div class="one">
             <div class="form-labels first-column first-name">
-              <label for="firstName">FIRST NAME</label>
+              <label for="first_name">FIRST NAME</label>
               <br>
-              <input type="text" name="firstName" id="firstName" minlength="5" maxlength="20" placeholder="John"
-                required>
+              <input type="text" name="first_name" id="first_name" minlength="1" maxlength="20" placeholder="John"
+                onfocus="this.placeholder = ''" required>
             </div>
             <div class="form-labels second-column last-name">
-              <label for="lastName">LAST NAME</label>
+              <label for="last_name">LAST NAME</label>
               <br>
-              <input type="text" name="lastName" id="lastName" minlength="5" maxlength="20" placeholder="Doe" required>
+              <input type="text" id="last_name" name="last_name" minlength="1" maxlength="20" placeholder="Doe"
+                onfocus="this.placeholder = ''" required>
             </div>
           </div>
 
           <div class="two">
             <div class="form-labels first-column email">
-              <label for="email">EMAIL </label>
+              <label for="email">*EMAIL </label>
               <br>
-              <input type="email" name="email" id="email" placeholder="John.Doe@yahoo.com" required>
+              <input type="email" id="email" name="email" placeholder="John.Doe@yahoo.com"
+                onfocus="this.placeholder = ''" required>
             </div>
             <div class="form-labels second-column phone-number">
               <label for="phone">PHONE NUMBER</label>
               <br>
-              <input type="number" name="phone" id="phone" maxlength="15" placeholder="(404)111-1111" required>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               placeholder="(404)111-1111"  onfocus="this.placeholder = ''" required>
             </div>
           </div>
 
           <div class="three">
             <div class="form-labels first-column password">
-              <label for="pass">PASSWORD</label>
+              <label for="password">*PASSWORD</label>
               <br>
-              <input type="password" name="pass" id="pass" maxlength="15" placeholder="*******" required>
+              <input type="password" id="password" name="password" maxlength="15" placeholder="*******"
+                onfocus="this.placeholder = ''" required>
             </div>
             <div class="form-labels second-column password-confirm">
-              <label for="passConf">PASSWORD CONFIRM</label>
+              <label for="password_confirm">*PASSWORD CONFIRM</label>
               <br>
-              <input type="password" name="passConf" id="passConf" maxlength="15" placeholder="*******" required>
+              <input type="password" id="password_confirm" name="password_confirm" maxlength="15" placeholder="*******"
+                onfocus="this.placeholder = ''" required>
             </div>
           </div>
         </div>
@@ -88,7 +93,7 @@
 
     <div id="bottom">
       <div class="bottom-info">
-        <button>Create Account</button>
+        <button type="submit" form="form-section" >Create Account</button>
         <p>Already have an account?
           <link rel="stylesheet" href="Log in">
         </p>
